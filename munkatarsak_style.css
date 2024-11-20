@@ -10,7 +10,7 @@ section {
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 .workerbox {
     width: 300px;
@@ -18,6 +18,17 @@ section {
     border-radius: 10px;
     text-align: center;
     padding: 10px;
+    background-color: white;
+}
+.workerbox:nth-child(1) {
+    grid-column: 1 / 3;
+    width: 610px;
+}
+.workerbox.workerbox:nth-child(2) {
+    grid-row: 2 / 3;
+}
+.workerbox:nth-child(3) {
+    grid-row: 2 / 3;
 }
 .workerbox img{
     max-width: 200px;
