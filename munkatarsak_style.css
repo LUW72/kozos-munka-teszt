@@ -1,0 +1,26 @@
+h1 {
+    font-family: "Truculenta", sans-serif;
+}
+article {
+    text-align: center;
+    margin: auto;
+}
+section {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 100px;
+}
+.workerbox {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.workerbox img{
+    max-width: 200px;
+    border: 1px solid black;
+    border-radius: 100px;
+}
