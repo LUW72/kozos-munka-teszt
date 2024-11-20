@@ -4,7 +4,7 @@
 
 body {
   font-family: Arial;
-  padding: 20px;
+  padding: 0;
   background: #f1f1f1;
 }
 
@@ -16,18 +16,15 @@ body {
   background: white;
 }
 
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-  border-radius: 15px;
+article{
+    padding: 20px;
 }
 
-/* Add a card effect for articles */
+.oszlop{
+    text-align: center;
+}
 
-/* Clear floats after the columns */
-.row:after {
+.oszlop:after {
   content: "";
   display: table;
   clear: both;
