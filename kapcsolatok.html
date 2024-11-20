@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="kapcsolatok_style.css" />
+    <link rel="stylesheet" href="stilus.css" />
     <title>WaveQuest Utazási Iroda</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Limelight&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="alap.css">
+    <link rel="stylesheet" href="kapcsolatok_style.css">
   </head>
   <body>
     <main>
@@ -25,17 +27,18 @@
         </ul>
       </nav>
       <article>
-        <h2>Elhelyekedésünk</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5084.511090540329!2d19.059082133458325!3d47.4757343604788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc40d487097f%3A0x8a3fbd537ee2454e!2sA38!5e0!3m2!1sen!2shu!4v1732114169664!5m2!1sen!2shu"
-          width="800"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-
+        <div class = "maps">
+            <h2>Elhelyekedésünk</h2>
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5084.511090540329!2d19.059082133458325!3d47.4757343604788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc40d487097f%3A0x8a3fbd537ee2454e!2sA38!5e0!3m2!1sen!2shu!4v1732114169664!5m2!1sen!2shu"
+            width="800"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
         <div class="custserv">
             <ul>
                 <li><a href="default.asp">Customer service</a></li>
@@ -47,7 +50,25 @@
            </ul>
         </div>
       </article>
-      <aside></aside>
+      <aside>
+        <div class="aside">
+            <div class="kartya">
+              <h2>About Me</h2>
+              <div class="fakeimg" style="height:100px;">Image</div>
+              <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            </div>
+            <div class="kartya">
+              <h3>Popular Post</h3>
+              <div class="fakeimg">Image</div><br>
+              <div class="fakeimg">Image</div><br>
+              <div class="fakeimg">Image</div>
+            </div>
+            <div class="kartya">
+              <h3>Follow Me</h3>
+              <p>Some text..</p>
+            </div>
+          </div>
+    </aside>
       <footer>
         <p></p>
       </footer>
