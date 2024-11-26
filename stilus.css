@@ -1,9 +1,10 @@
 * {
   box-sizing: border-box;
   font-family: Arial;
+}
+body {
   margin: 0;
 }
-
 body main {
   background-image: url("kepek/background.jfif");
   background-color: #cccccc;
