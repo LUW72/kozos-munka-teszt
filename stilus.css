@@ -164,8 +164,11 @@ footer a {
   }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 900px) {
   footer {
     grid-template-columns: 1fr 1fr;
+  }
+  footer div {
+    justify-content: start;
   }
 }
