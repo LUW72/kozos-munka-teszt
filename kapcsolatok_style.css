@@ -269,6 +269,7 @@ input[type=text], select, textarea {
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
+  color: #000;
 }
 
 input[type=submit] {
@@ -325,7 +326,6 @@ h3{
 .paragraph-text{
   cursor: context-menu;
 }
-
 .szov-con{
   cursor: context-menu;
 }
