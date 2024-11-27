@@ -1,7 +1,10 @@
 * {
   box-sizing: border-box;
+  font-family: Arial;
 }
-
+body {
+  margin: 0;
+}
 body main {
   background-image: url("kepek/background.jfif");
   background-color: #cccccc;
@@ -189,8 +192,30 @@ aside {
 }
 footer {
   grid-area: f;
+  background-color: #008d88;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 15px;
+  padding: 100px;
 }
-
+footer div {
+  display: grid;
+  grid-template-rows: 50px;
+  text-align: center;
+  justify-content: center;
+}
+footer h3 {
+  color: beige;
+  width: max-content;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  padding: 0;
+  margin: 5px 0px;
+  width: max-content;
+}
 @media screen and (max-width: 900px) {
   main {
     grid-template-columns: 1fr;
@@ -220,5 +245,14 @@ footer {
   .leftcolumn {
     width: 95%;
     padding: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+  }
+  footer div {
+    justify-content: start;
   }
 }
