@@ -180,6 +180,8 @@ header {
   margin-right: auto;
   background-color: aliceblue;
   width: 330px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .el-szov{
@@ -301,14 +303,33 @@ input[type=submit]:hover {
   margin-top: 6px;
 }
 
-/* Clear floats after the columns */
+
 .row::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+article{
+  margin: auto;
+}
+
+h2{
+  cursor: context-menu;
+}
+
+h3{
+  cursor: context-menu;
+}
+
+.paragraph-text{
+  cursor: context-menu;
+}
+
+.szov-con{
+  cursor: context-menu;
+}
+
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
@@ -316,11 +337,6 @@ input[type=submit]:hover {
   }
 }
 
-
-
-article{
-    margin: auto;
-}
 
 
 
