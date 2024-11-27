@@ -253,6 +253,8 @@ footer a {
   footer div {
     justify-content: start;
   }
+}
+@media (max-width: 500px) {
   footer {
     grid-template-columns: 1fr;
   }
