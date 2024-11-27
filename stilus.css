@@ -253,4 +253,7 @@ footer a {
   footer div {
     justify-content: start;
   }
+  footer {
+    grid-template-columns: 1fr;
+  }
 }
