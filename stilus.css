@@ -213,6 +213,7 @@ footer a {
   margin: 5px 0px;
   width: max-content;
 }
+
 @media screen and (max-width: 900px) {
   main {
     grid-template-columns: 1fr;
@@ -253,7 +254,7 @@ footer a {
     justify-content: start;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   footer {
     grid-template-columns: 1fr;
   }
