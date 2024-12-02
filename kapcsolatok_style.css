@@ -13,9 +13,10 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;  
+    width: 100%;  
     text-align: center; 
     border-radius: 15px;
+
 }
 
 
@@ -41,6 +42,15 @@
   font-size: 17px;
 }
 
+.title-con{
+  margin-top: auto;
+  padding-left: 10px;
+  margin-bottom: 5px;
+  font-weight: normal;
+  font-size: 17px;
+  width:auto;
+}
+
 .con{
   margin-left: auto;
   width:550px;
@@ -51,7 +61,8 @@
 
 .con-inside{
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 1fr 3fr;
+  width: 100%;
 }
 
 .contacts{
@@ -92,7 +103,7 @@
   grid-column: 2;
   margin-right: auto;
   background-color: aliceblue;
-  width: 330px;
+  width: 100%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
@@ -148,9 +159,11 @@
 }
 
 .cs{
-  margin-right: auto;
-  width: 250px;
+  margin-right: 20px;
+  width: 300px;
 }
+
+
 
 .szov-con{
   grid-column: 2;
@@ -253,6 +266,11 @@ h3{
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .cs{
+    width:100%;
+  }
+}
 @media screen and (max-width: 900px) {
   .menuk{
     display: grid;
@@ -262,6 +280,7 @@ h3{
 
   .cs{
     width: 100%;
+    margin: auto;
   }
 
   .custserv{
@@ -289,10 +308,15 @@ h3{
     grid-template-columns: 1fr;
     place-items: center;
   }
-  .con{
+  .con-inside{
     width:100%;
+    grid-template-columns: 1fr;
+    place-items: center;
   }
   .eredmeny{
+    width: 100%;
+  }
+  .menuk{
     width: 100%;
   }
 }
