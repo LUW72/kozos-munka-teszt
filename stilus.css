@@ -58,6 +58,7 @@ nav ul li a {
   text-decoration: none;
 }
 
+
 nav ul li a:hover {
   background-color: #017571;
 }
@@ -78,7 +79,6 @@ nav ul li a:hover {
   font-size: 16px;
   margin: 0;
   width: 100%;
-  padding: 0;
 }
 
 
@@ -86,8 +86,7 @@ nav ul li a:hover {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
-  width: 33%;
+  width: 33.3%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -99,14 +98,14 @@ nav ul li a:hover {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
+  text-align: center;
 }
 
 
-.topnav a:hover, .dropdown:hover .dropbtn {
+nav a:hover, .dropdown:hover .dropbtn {
   background-color: #017571;
   color: white;
-}
+} 
 
 
 .dropdown-content a:hover {
@@ -311,7 +310,7 @@ footer a {
     justify-content: start;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 605px) {
   footer {
     grid-template-columns: 1fr;
   }
