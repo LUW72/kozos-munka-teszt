@@ -166,13 +166,10 @@
   padding-right: 10px;
 }
 
-
-
 .szov-con{
   grid-column: 2;
   text-align: center;
 }
-
 
 .kapcsol{
   display: grid;
@@ -283,6 +280,11 @@ iframe{
     margin-top: 0;
   }
 
+  article{
+    margin: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
   .menuk{
     display: grid;
     grid-template-columns: 1fr;
@@ -324,6 +326,10 @@ iframe{
 
   iframe {
     width: 100%;
+  }
+  .kapcs_oszlop{
+    width: 100%;
+    padding: 0;
   }
 
 }
