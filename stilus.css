@@ -58,7 +58,6 @@ nav ul li a {
   text-decoration: none;
 }
 
-
 nav ul li a:hover {
   background-color: #017571;
 }
@@ -68,7 +67,6 @@ nav ul li a:hover {
   float: left;
   width: 100%;
 }
-
 
 .dropdown .dropbtn {
   border: none;
@@ -81,16 +79,14 @@ nav ul li a:hover {
   width: 100%;
 }
 
-
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   width: 33.3%;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
 
 .dropdown-content a {
   float: none;
@@ -101,34 +97,32 @@ nav ul li a:hover {
   text-align: center;
 }
 
-
-nav a:hover, .dropdown:hover .dropbtn {
+nav a:hover,
+.dropdown:hover .dropbtn {
   background-color: #017571;
   color: white;
-} 
-
+}
 
 .dropdown-content a:hover {
   background-color: #ddd;
   color: black;
 }
 
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 .aside {
-  float:left;
+  float: left;
   justify-content: center;
   width: 90%;
-  padding-left: 10%; 
+  padding-left: 10%;
   /*padding-left: 10px;*/
   /* background-color: white; */
   margin-bottom: 20px;
 }
-.aside .kartya{
-  text-align: center; 
+.aside .kartya {
+  text-align: center;
 }
 
 .container {
@@ -137,7 +131,7 @@ nav a:hover, .dropdown:hover .dropbtn {
   color: white;
 }
 
-.kiemelt{
+.kiemelt {
   font-family: "Truculenta", sans-serif;
   font-weight: 400;
   color: #008d88;
@@ -156,16 +150,16 @@ nav a:hover, .dropdown:hover .dropbtn {
   transform: translate(-50%, -50%);
 }
 
-.kartya:hover{
+.kartya:hover {
   filter: drop-shadow(10px 10px 20px rgba(36, 36, 36, 0.5));
 }
 
-.aside_kepek_kis{
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    display: block;
-    border-radius: 15px;
+.aside_kepek_kis {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 15px;
 }
 
 /* Aside ikonok */
@@ -185,12 +179,12 @@ nav a:hover, .dropdown:hover .dropbtn {
 }
 
 .fa-facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
 }
 
 .fa-twitter {
-  background: #55ACEE;
+  background: #55acee;
   color: white;
 }
 
@@ -214,7 +208,7 @@ nav a:hover, .dropdown:hover .dropbtn {
   margin-top: 20px;
   border-radius: 15px;
 }
-.cegunk{
+.cegunk {
   padding: 10px;
   text-decoration: none;
   background-color: #cccccc;
@@ -296,7 +290,6 @@ footer a {
     display: grid;
     grid-template-columns: 1fr;
   }
-
 }
 
 @media (max-width: 900px) {
@@ -306,7 +299,7 @@ footer a {
   footer div {
     justify-content: start;
   }
-  .aside_kepek_kis{
+  .aside_kepek_kis {
     width: 100%;
     height: 175px;
   }
@@ -314,5 +307,8 @@ footer a {
 @media (max-width: 605px) {
   footer {
     grid-template-columns: 1fr;
+  }
+  footer a {
+    display: block;
   }
 }

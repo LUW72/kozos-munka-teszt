@@ -1,135 +1,145 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stilus.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stilus.css" />
     <title>WaveQuest Utazási Iroda</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="alap.css">
-    <link rel="stylesheet" href="tervezes_style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Limelight&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="alap.css" />
+    <link rel="stylesheet" href="tervezes_style.css" />
+  </head>
+  <body>
     <main>
-        <header>
-            <h1><a href="index.html">WaveQuest Utazási Iroda</a></h1>
-        </header>
-        <nav>
-          <ul>
-            <li>
-              <div class="dropdown">
-                <a href="tervezes.html" class="dropbtn">Tervezés</a>
-                <div class="dropdown-content">
-                  <a href="tervezes.html">Busz utazás tervezés</a>
-                  <a href="tervezes.html">Foglalások kezelése</a>
-                  <a href="tervezes.html">Busz nyomonkövetése</a>
-                  <a href="tervezes.html">Segítség</a>
-                </div>
+      <header>
+        <h1><a href="index.html">WaveQuest Utazási Iroda</a></h1>
+      </header>
+      <nav>
+        <ul>
+          <li>
+            <div class="dropdown">
+              <a href="tervezes.html" class="dropbtn">Tervezés</a>
+              <div class="dropdown-content">
+                <a href="tervezes.html">Busz utazás tervezés</a>
+                <a href="tervezes.html">Foglalások kezelése</a>
+                <a href="tervezes.html">Busz nyomonkövetése</a>
+                <a href="tervezes.html">Segítség</a>
               </div>
-            </li>
-            <li>
-              <div class="dropdown">
-                <a href="munkatarsak.html" class="dropbtn">Munkatársaink</a>
-                <div class="dropdown-content">
-                  <a href="munkatarsak.html">Igazgató</a>
-                  <a href="munkatarsak.html">Igazgatóhelyettesek</a>
-                  <a href="munkatarsak.html">Műszakvezető</a>
-                  <a href="munkatarsak.html">Regionális koordinátor</a>
-                </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href="munkatarsak.html" class="dropbtn">Munkatársaink</a>
+              <div class="dropdown-content">
+                <a href="munkatarsak.html">Igazgató</a>
+                <a href="munkatarsak.html">Ig. helyettes</a>
+                <a href="munkatarsak.html">Műszakvezető</a>
+                <a href="munkatarsak.html">Regionális koordinátor</a>
               </div>
-            </li>
-            <li>
+            </div>
+          </li>
+          <li>
             <div class="dropdown">
               <a href="kapcsolatok.html" class="dropbtn">Kapcsolatok</a>
-                <div class="dropdown-content">
-                  <a href="kapcsolatok.html">Elhelyezkedés</a>
-                  <a href="kapcsolatok.html">Eredményeink</a>
-                  <a href="kapcsolatok.html">Elérhetőségek</a>
-                  <a href="kapcsolatok.html">Írj nekünk!</a>
-                </div>
+              <div class="dropdown-content">
+                <a href="kapcsolatok.html">Elhelyezkedés</a>
+                <a href="kapcsolatok.html">Eredményeink</a>
+                <a href="kapcsolatok.html">Elérhetőségek</a>
+                <a href="kapcsolatok.html">Írj nekünk!</a>
+              </div>
             </div>
-            </li>
-          </ul>
-        </nav>
-            <article class="planner">
-                <h2>Busz utazás tervezése</h2>
-                <section class="planner_box">
-                    <div>
-                        <input type="radio" id="trip" name="one_way">
-                        <label for="trip">Csak oda</label>
-                        <input type="radio" id="trip2" name="one_way">
-                        <label for="trip2">Oda-vissza</label>
-                    </div>
-                    <div>
-                        <label for="from">Honnan</label><br>
-                        <input type="text" name="from" id="from" placeholder="Budapest"><br>
-                    </div>
-                    <div>
-                        <label for="where">Hová</label><br>
-                        <input type="text" name="from" id="from" placeholder="Berlin">
-                    </div>
-                    <div>
-                        <label for="date">Érkezés</label><br>
-                        <input type="date" name="date" id="date" value="2024-11-28" max="2025-11-30">
-                    </div>
-                    <div>
-                        <label for="passengers">Utasok</label><br>
-                        <input type="text" id="passengers" placeholder="1">
-                    </div>
-                    <div>
-                        <a href="#"><button id="search_btn">Keresés</button></a>
-                    </div>
-                </section>
-            </article>
-            <section class="menu_panel">
-                    <div>
-                        <button id="menu_btn">Foglalásaim kezelése</button><br>
-                    </div>
-                    <div>
-                        <button id="menu_btn">Busz nyomonkövetése</button><br>
-                    </div>
-                    <div>
-                        <button id="menu_btn">Segítség</button>
-                    </div>
-            </section>
-        <footer>
-            <div>
-              <h3>Busz</h3>
-              <a href="#">Minden város</a>
-              <a href="#">Úti célok</a>
-              <a href="#">Éjszakai busz</a>
-              <a href="#">Alkalmazás letöltése</a>
-              <a href="#">Magyarország</a>
-            </div>
-            <div>
-              <h3>Úti cél</h3>
-              <a href="#">Szlovénia</a>
-              <a href="#">Hollandia</a>
-              <a href="#">Budapest</a>
-              <a href="#">Párizs</a>
-              <a href="#">Split</a>
-              <a href="#">Zürich</a>
-            </div>
-            <div>
-              <h3>WaveQuest</h3>
-              <a href="#">A WaveQuest-ről</a>
-              <a href="#">Állásajánlatok</a>
-              <a href="#">Sajtószoba</a>
-              <a href="#">Általános üzleti és foglalási feltételek</a>
-              <a href="#">Viszonteladói bejelentkezés</a>
-            </div>
-            <div>
-              <h3>Ügyfélszolgálat</h3>
-              <a href="#">Kapcsolat</a>
-              <a href="#">Szolgáltatások</a>
-              <a href="#">Foglalások kezelése</a>
-              <a href="#">Kerékpár szállítás</a>
-              <a href="#">Ülőhely foglalása</a>
-              <a href="#">Csomag</a>
-            </div>
-        </footer>
+          </li>
+        </ul>
+      </nav>
+      <article class="planner">
+        <h2>Busz utazás tervezése</h2>
+        <section class="planner_box">
+          <div>
+            <input type="radio" id="trip" name="one_way" />
+            <label for="trip">Csak oda</label>
+            <input type="radio" id="trip2" name="one_way" />
+            <label for="trip2">Oda-vissza</label>
+          </div>
+          <div>
+            <label for="from">Honnan</label><br />
+            <input
+              type="text"
+              name="from"
+              id="from"
+              placeholder="Budapest"
+            /><br />
+          </div>
+          <div>
+            <label for="where">Hová</label><br />
+            <input type="text" name="from" id="from" placeholder="Berlin" />
+          </div>
+          <div>
+            <label for="date">Érkezés</label><br />
+            <input
+              type="date"
+              name="date"
+              id="date"
+              value="2024-11-28"
+              max="2025-11-30"
+            />
+          </div>
+          <div>
+            <label for="passengers">Utasok</label><br />
+            <input type="text" id="passengers" placeholder="1" />
+          </div>
+          <div>
+            <a href="#"><button id="search_btn">Keresés</button></a>
+          </div>
+        </section>
+      </article>
+      <section class="menu_panel">
+        <div><button id="menu_btn">Foglalásaim kezelése</button><br /></div>
+        <div><button id="menu_btn">Busz nyomonkövetése</button><br /></div>
+        <div>
+          <button id="menu_btn">Segítség</button>
+        </div>
+      </section>
+      <footer>
+        <div>
+          <h3>Busz</h3>
+          <a href="#">Minden város</a>
+          <a href="#">Úticélok</a>
+          <a href="#">Éjszakai busz</a>
+          <a href="#">Alkalmazás letöltése</a>
+          <a href="#">Magyarország</a>
+        </div>
+        <div>
+          <h3>Úticél</h3>
+          <a href="#">Szlovénia</a>
+          <a href="#">Hollandia</a>
+          <a href="#">Budapest</a>
+          <a href="#">Párizs</a>
+          <a href="#">Split</a>
+          <a href="#">Zürich</a>
+        </div>
+        <div>
+          <h3>WaveQuest</h3>
+          <a href="#">A WaveQuest-ről</a>
+          <a href="#">Állásajánlatok</a>
+          <a href="#">Sajtószoba</a>
+          <a href="#">Á.Sz.F</a>
+          <a href="#">Viszonteladói</a>
+        </div>
+        <div>
+          <h3>Ügyfélszolgálat</h3>
+          <a href="#">Kapcsolat</a>
+          <a href="#">Szolgáltatások</a>
+          <a href="#">Foglalások kezelése</a>
+          <a href="#">Kerékpár szállítás</a>
+          <a href="#">Ülőhely foglalása</a>
+          <a href="#">Csomag</a>
+        </div>
+      </footer>
     </main>
-</body>
+  </body>
 </html>
