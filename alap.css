@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: Arial;
   padding: 0;
@@ -17,11 +18,8 @@ body {
 }
 
 article{
-  padding: 20px;
-}
-
-.oszlop{
-  text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .oszlop p{
@@ -56,8 +54,6 @@ article{
   float: left;
 }
 
-
-
 .clear{
   clear: both;
 }
@@ -65,6 +61,7 @@ article{
 .kartya{
   text-align: left;
 }
+
 
 .clearfix {
   float: left;
@@ -79,12 +76,11 @@ article{
   margin-top: 20px;
 }
 
-
-
 /* Felsorolás az alján */
 
 .center {
   text-align: center;
+  margin: 20px;
 }
 
 .pagination {
@@ -119,11 +115,13 @@ article{
   border-bottom-right-radius: 5px;
 }
 
-
 .olvasTobb {
-  background-color: none; /* Green */
-  border: none;
+  font-family: "Truculenta", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   color: #008d88;
+  background-color: #dbdbdb;
+  border: 1px solid grey;
   padding: 5px 32px;
   text-align: center;
   text-decoration: none;
@@ -131,6 +129,10 @@ article{
   font-size: 16px;
   border-radius: 15px;
   margin-top: 10px;
+}
+
+.olvasTobb:hover{
+  cursor: pointer;
 }
 
 .olvasTobb:hover{
@@ -145,6 +147,10 @@ article{
     .clearfix {
       float: left;
       width: 100%;
+    }
+    .leftcolumn {
+      width: 100%;
+      padding: 0;
     }
   }
 }
