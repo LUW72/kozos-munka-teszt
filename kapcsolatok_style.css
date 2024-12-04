@@ -6,16 +6,17 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     place-items: center;
-}
+  }
 
 .custserv{
     grid-column: 1 / span 1;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;  
+    width: 100%;  
     text-align: center; 
     border-radius: 15px;
+
 }
 
 
@@ -24,6 +25,7 @@
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
+  width: 100%;
 }
 
 .custserv li a:hover{
@@ -39,6 +41,16 @@
   margin-bottom: 5px;
   font-weight: normal;
   font-size: 17px;
+  width:100%;
+}
+
+.title-con{
+  margin-top: auto;
+  padding-left: 10px;
+  margin-bottom: 5px;
+  font-weight: normal;
+  font-size: 17px;
+  width:auto;
 }
 
 .con{
@@ -51,7 +63,8 @@
 
 .con-inside{
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 1fr 3fr;
+  width: 100%;
 }
 
 .contacts{
@@ -92,7 +105,7 @@
   grid-column: 2;
   margin-right: auto;
   background-color: aliceblue;
-  width: 330px;
+  width: 100%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
@@ -148,9 +161,12 @@
 }
 
 .cs{
-  margin-right: auto;
-  width: 250px;
+  width: 100%;
+  margin-left: auto;
+  padding-right: 10px;
 }
+
+
 
 .szov-con{
   grid-column: 2;
@@ -242,18 +258,37 @@ h3{
   cursor: context-menu;
 }
 
+#subject{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+iframe{
+  width: 100%;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .cs{
+    width:100%;
+    margin-right: 10px;
+  }
+  .menuk{
+    place-items: center;
+  }
+}
 @media screen and (max-width: 900px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
-}
 
-@media screen and (max-width: 900px) {
   .menuk{
     display: grid;
     grid-template-columns: 1fr;
     margin: auto;
+    place-items: center;
+    width: 100%;
   }
 
   .cs{
@@ -267,21 +302,28 @@ h3{
     margin:auto;
   }
 
-}
-
-@media screen and (max-width: 900px) {
-  iframe {
-    width: responsive;
-    height: responsive;
+  .eredmeny{
+    width: 100%;
   }
+
   .paragraph-container{
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
+    width:100%;
   }
-  .menuk{
-    display: grid;
+
+  .con-inside{
+    width:100%;
     grid-template-columns: 1fr;
     place-items: center;
   }
+  .eredmeny{
+    width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
 }

@@ -7,10 +7,16 @@
     <title>WaveQuest Utazási Iroda</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Limelight&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="alap.css" />
     <link rel="stylesheet" href="kapcsolatok_style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <main>
@@ -19,9 +25,39 @@
       </header>
       <nav>
         <ul>
-          <li><a href="tervezes.html">Tervezés</a></li>
-          <li><a href="munkatarsak.html">Munkatársaink</a></li>
-          <li><a href="kapcsolatok.html">Kapcsolat</a></li>
+          <li>
+            <div class="dropdown">
+              <a href="tervezes.html" class="dropbtn">Tervezés</a>
+              <div class="dropdown-content">
+                <a href="tervezes.html">Busz utazás tervezés</a>
+                <a href="tervezes.html">Foglalások kezelése</a>
+                <a href="tervezes.html">Busz nyomonkövetése</a>
+                <a href="tervezes.html">Segítség</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href="munkatarsak.html" class="dropbtn">Munkatársaink</a>
+              <div class="dropdown-content">
+                <a href="munkatarsak.html">Igazgató</a>
+                <a href="munkatarsak.html">Igazgatóhelyettesek</a>
+                <a href="munkatarsak.html">Műszakvezető</a>
+                <a href="munkatarsak.html">Regionális koordinátor</a>
+              </div>
+            </div>
+          </li>
+          <li>
+          <div class="dropdown">
+            <a href="kapcsolatok.html" class="dropbtn">Kapcsolatok</a>
+              <div class="dropdown-content">
+                <a href="kapcsolatok.html">Elhelyezkedés</a>
+                <a href="kapcsolatok.html">Eredményeink</a>
+                <a href="kapcsolatok.html">Elérhetőségek</a>
+                <a href="kapcsolatok.html">Írj nekünk!</a>
+              </div>
+          </div>
+          </li>
         </ul>
       </nav>
       <article>
@@ -29,7 +65,6 @@
           <h2>Elhelyezkedésünk</h2>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15805.84386746544!2d-14.41762435928384!3d-7.9512230716292756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5b0f3c3ec252081%3A0xce9fa53b91ba25f0!2sCat%20Hill%20ASCN%201ZZ%2C%20St%20Helena%2C%20Ascension%20and%20Tristan%20da%20Cunha!5e0!3m2!1sen!2shu!4v1732460435826!5m2!1sen!2shu"
-            width="100%"
             height="450"
             style="border: 0"
             allowfullscreen=""
@@ -37,142 +72,157 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
+        <section class="eredmeny">
+          <div class="kartya">
+            <h2 class="title-rolunk">Eredményeink</h2>
+            <section class="basic-page">
+              <div class="paragraph-container">
+                <div class="par-items">
+                  <div class="par-icon-con">
+                    <img class="icon" src="kepek/globe.png" alt="globe-icon" />
+                  </div>
+                  <div class="paragraph-content">
+                    <h3 class="paragraph-title">40+</h3>
+                    <div class="paragraph-text">ország 4 kontinensen</div>
+                  </div>
+                </div>
 
-        <div class="kartya">
-          <h2 class="title-rolunk">Eredményeink</h2>
-          <section class="basic-page">
-            <div class="paragraph-container">
-              <div class="par-items">
-                <div class="par-icon-con">
-                  <img class="icon" src="kepek/globe.png" alt="globe-icon" />
+                <div class="par-items">
+                  <div class="par-icon-con">
+                    <img
+                      class="icon"
+                      src="kepek/location.png"
+                      alt="location-icon"
+                    />
+                  </div>
+                  <div class="paragraph-content">
+                    <h3 class="paragraph-title">5,600</h3>
+                    <div class="paragraph-text">úticél</div>
+                  </div>
                 </div>
-                <div class="paragraph-content">
-                  <h3 class="paragraph-title">40+</h3>
-                  <div class="paragraph-text">ország 4 kontinensen</div>
-                </div>
-              </div>
 
-              <div class="par-items">
-                <div class="par-icon-con">
-                  <img
-                    class="icon"
-                    src="kepek/location.png"
-                    alt="location-icon"
-                  />
-                </div>
-                <div class="paragraph-content">
-                  <h3 class="paragraph-title">5,600</h3>
-                  <div class="paragraph-text">úticél</div>
+                <div class="par-items">
+                  <div class="par-icon-con">
+                    <img
+                      class="icon"
+                      src="kepek/passenger.png"
+                      alt="destination-icon"
+                    />
+                  </div>
+                  <div class="paragraph-content">
+                    <h3 class="paragraph-title">400+</h3>
+                    <div class="paragraph-text">millió utas választása</div>
+                  </div>
                 </div>
               </div>
+            </section>
+            <section class="basic-page">
+              <div class="paragraph-container">
+                <div class="par-items">
+                  <div class="par-icon-con">
+                    <img
+                      class="icon"
+                      src="kepek/driver.png"
+                      alt="driver-icon"
+                    />
+                  </div>
+                  <div class="paragraph-content">
+                    <h3 class="paragraph-title">1000+</h3>
+                    <div class="paragraph-text">busz partner</div>
+                  </div>
+                </div>
 
-              <div class="par-items">
-                <div class="par-icon-con">
-                  <img
-                    class="icon"
-                    src="kepek/passenger.png"
-                    alt="destination-icon"
-                  />
+                <div class="par-items">
+                  <div class="par-icon-con">
+                    <img class="icon" src="kepek/bus.png" alt="bus-icon" />
+                  </div>
+                  <div class="paragraph-content">
+                    <h3 class="paragraph-title">5,500+</h3>
+                    <div class="paragraph-text">busz az úton</div>
+                  </div>
                 </div>
-                <div class="paragraph-content">
-                  <h3 class="paragraph-title">400+</h3>
-                  <div class="paragraph-text">millió utas választása</div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="basic-page">
-            <div class="paragraph-container">
-              <div class="par-items">
-                <div class="par-icon-con">
-                  <img class="icon" src="kepek/driver.png" alt="driver-icon" />
-                </div>
-                <div class="paragraph-content">
-                  <h3 class="paragraph-title">1000+</h3>
-                  <div class="paragraph-text">busz partner</div>
-                </div>
-              </div>
 
-              <div class="par-items">
-                <div class="par-icon-con">
-                  <img class="icon" src="kepek/bus.png" alt="bus-icon" />
-                </div>
-                <div class="paragraph-content">
-                  <h3 class="paragraph-title">5,500+</h3>
-                  <div class="paragraph-text">busz az úton</div>
+                <div class="par-items">
+                  <div class="par-icon-con">
+                    <img class="icon" src="kepek/train.png" alt="train-icon" />
+                  </div>
+                  <div class="paragraph-content">
+                    <h3 class="paragraph-title">400+</h3>
+                    <div class="paragraph-text">vonat Európában</div>
+                  </div>
                 </div>
               </div>
+            </section>
 
-              <div class="par-items">
-                <div class="par-icon-con">
-                  <img class="icon" src="kepek/train.png" alt="train-icon" />
+            <section class="basic-page">
+              <div class="paragraph-container">
+                <div class="par-items">
+                  <div class="par-icon-con">
+                    <img
+                      class="icon"
+                      src="kepek/office.png"
+                      alt="office-icon"
+                    />
+                  </div>
+                  <div class="paragraph-content">
+                    <h3 class="paragraph-title">25+</h3>
+                    <div class="paragraph-text">office</div>
+                  </div>
                 </div>
-                <div class="paragraph-content">
-                  <h3 class="paragraph-title">400+</h3>
-                  <div class="paragraph-text">vonat Európában</div>
-                </div>
-              </div>
-            </div>
-          </section>
 
-          <section class="basic-page">
-            <div class="paragraph-container">
-              <div class="par-items">
-                <div class="par-icon-con">
-                  <img class="icon" src="kepek/office.png" alt="office-icon" />
+                <div class="par-items">
+                  <div class="par-icon-con">
+                    <img class="icon" src="kepek/group.png" alt="group-icon" />
+                  </div>
+                  <div class="paragraph-content">
+                    <h3 class="paragraph-title">5,500+</h3>
+                    <div class="paragraph-text">munkatárs</div>
+                  </div>
                 </div>
-                <div class="paragraph-content">
-                  <h3 class="paragraph-title">25+</h3>
-                  <div class="paragraph-text">office</div>
-                </div>
-              </div>
 
-              <div class="par-items">
-                <div class="par-icon-con">
-                  <img class="icon" src="kepek/group.png" alt="group-icon" />
-                </div>
-                <div class="paragraph-content">
-                  <h3 class="paragraph-title">5,500+</h3>
-                  <div class="paragraph-text">munkatárs</div>
-                </div>
-              </div>
-
-              <div class="par-items">
-                <div class="par-icon-con">
-                  <img class="icon" src="kepek/red-flag.png" alt="flag-icon" />
-                </div>
-                <div class="paragraph-content">
-                  <h3 class="paragraph-title">100+</h3>
-                  <div class="paragraph-text">nemzetiségek</div>
+                <div class="par-items">
+                  <div class="par-icon-con">
+                    <img
+                      class="icon"
+                      src="kepek/red-flag.png"
+                      alt="flag-icon"
+                    />
+                  </div>
+                  <div class="paragraph-content">
+                    <h3 class="paragraph-title">100+</h3>
+                    <div class="paragraph-text">nemzetiségek</div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
-        </div>
+            </section>
+          </div>
+        </section>
 
         <section class="menuk">
           <div class="cs">
             <div class="kartya">
               <h3 class="title">Ügyfélszolgálat</h3>
               <ul class="custserv">
-                <li><a href="news.asp">Segítség</a></li>
-                <li><a href="contact.asp">Szolgáltatások</a></li>
-                <li><a href="about.asp">Foglalás Kezelés</a></li>
-                <li><a href="aboutseat.asp">Ülőhely Foglalás</a></li>
-                <li><a href="aboutluggage.asp">Csomag</a></li>
+                <li><a href="kapcsolatok.html">Segítség</a></li>
+                <li><a href="kapcsolatok.html">Szolgáltatások</a></li>
+                <li><a href="kapcsolatok.html">Foglalás Kezelés</a></li>
+                <li><a href="kapcsolatok.html">Ülőhely Foglalás</a></li>
+                <li><a href="kapcsolatok.html">Csomag</a></li>
               </ul>
             </div>
           </div>
           <div class="con">
             <div class="kartya">
-              <h3 class="title">WaveQuest</h3>
+              <h3 class="title-con">WaveQuest</h3>
               <div class="con-inside">
                 <ul class="contacts">
-                  <li><a class="active" href="contacts.asp">Kapcsolat</a></li>
-                  <li><a href="about.asp">WaveQuest-ről</a></li>
-                  <li><a href="jobs.asp">Állasok</a></li>
-                  <li><a href="gencon.asp">Általános Feltételek</a></li>
-                  <li><a href="faq.asp">Gyakori Kérdések</a></li>
+                  <li>
+                    <a class="active" href="kapcsolatok.html">Kapcsolat</a>
+                  </li>
+                  <li><a href="kapcsolatok.html">WaveQuest-ről</a></li>
+                  <li><a href="kapcsolatok.html">Állasok</a></li>
+                  <li><a href="kapcsolatok.html">Általános Feltételek</a></li>
+                  <li><a href="kapcsolatok.html">Gyakori Kérdések</a></li>
                 </ul>
                 <div class="elerhetosegek">
                   <section class="kapcsol">
@@ -226,7 +276,7 @@
           <div class="bekero">
             <h2>Írj nekünk</h2>
             <div class="container_k">
-              <form action="/action_page.php">
+              <form action="kapcsolatok.html">
                 <div class="row">
                   <div class="col-25">
                     <label for="fname">Keresztnév</label>
@@ -291,21 +341,23 @@
         <div class="aside">
             <div class="kartya">
               <h2>Rólunk</h2>
-              <div><img src="kepek/repulo.jpg" alt="repülőgép" class="aside_kepek_kis"></div><br>
-              <a href="#" class="cegunk">Cégünkről</a>
+              <div><img src="kepek/repulo.jpg" alt="" class="aside_kepek_kis"></div><br>
+              <a href="#" class="kiemelt">Cégünkről</a>
               <p><br>Imerjen meg minket!<br><br>A WaveQuest Zrt. már 1998 óta utazásokkal foglalkozik.</p>
-              <div><img src="kepek/bus.jpg" alt="" class="aside_kepek_kis"></div><br>
+              <div><img src="kepek/bus.jpg" alt="" class="aside_kepek_kis" style="height: 100px;"></div><br>
               
             </div>
             <div class="kartya">
               <h3>Népszerű úticéljaink</h3>
-                <div class="container"><img src="kepek/barcelona.jpg" alt="Madártávlati kép Barcelonáról" class="aside_kepek_kis">
-                  <div class="centered">Barcelona</div>
-                </div><br>
-              <div class="container"><img src="kepek/becs.jpg" alt="Esti kép Bécsről" class="aside_kepek_kis">
+              <div class="container">
+                <div class="container"><img src="kepek/barcelona.jpg" alt="" class="aside_kepek_kis">
+              </div>
+                <div class="centered">Barcelona</div>
+              </div><br>
+              <div class="container"><img src="kepek/becs.jpg" alt="" class="aside_kepek_kis">
                 <div class="centered">Bécs</div>
               </div><br>
-              <div class="container"><img src="kepek/berlin.jpg" alt="Madártávlati kép Berlinről" class="aside_kepek_kis">
+              <div class="container"><img src="kepek/berlin.jpg" alt="" class="aside_kepek_kis">
                 <div class="centered">Berlin</div>
               </div><br>
             </div>
@@ -354,7 +406,7 @@
           <a href="#">Ülőhely foglalása</a>
           <a href="#">Csomag</a>
         </div>
-    </footer>
+      </footer>
     </main>
   </body>
 </html>
