@@ -309,7 +309,6 @@ iframe {
 
   .con-inside {
     width: 100%;
-    grid-template-columns: 1fr;
     place-items: center;
   }
   .eredmeny {
@@ -322,5 +321,8 @@ iframe {
   .kapcs_oszlop {
     width: 100%;
     padding: 0;
+  }
+  .par-items{
+    place-items: center;
   }
 }
